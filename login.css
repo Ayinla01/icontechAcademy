@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 62.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./icontech.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+.container{
+    width: 300px;
+    margin: 200px auto;
+    padding: 3rem;
+}
+.log{
+    border-bottom: 2px solid #fff;
+}
+form{
+    width: 100%;
+    font-size: 2rem;
+}
+input{
+    width: 100%;
+    margin: 2px 0;
+    padding: 1rem 10px;
+    border: none;
+    border-radius: 10px;
+    color: #e9e2e2;
+    background-color: #817e7e;
+}
+button{
+    width: 100%;
+    margin: 7px 0;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+input::placeholder{
+    color: #fff;
+}
+.cre {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem;
+    font-size: 2rem;
+    outline: 1px solid rgb(157, 157, 247);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+}
+a{
+    color: rgb(153, 236, 209);
+}
+p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem;
+}

@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: 62.8%;
+}
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./icontech.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+:root{
+    --primary-color:rgb(221, 64, 36);
+    --secondary-color:rgb(85, 245, 85);
+    --tertiary-color:rgb(247, 180, 180);
+    --white:#fff;
+    --transition:0.5s;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2258b6;
+}
+.logo{
+    display: block;
+    font-size: 3rem;
+    color: var(--white);
+    margin-left: 1rem;
+}
+span{
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+     padding: 0 2rem;
+}
+.nav-lists{
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+}
+.n-l{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4rem;
+}
+.nav-item{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.7rem;
+}
+.nav-item a{
+    font-size: 2rem;
+    color: var(--white);
+    transition: var(--transition);
+}
+.nav-item a:hover{
+    color: var(--secondary-color);
+}
+.social{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.social i{
+    font-size: 1.6rem;
+}
+.phone  i{
+    font-size: 2rem;
+}
+.phone  i:hover{
+    color: var(--primary-color);
+}
+.whatsapp i{
+    font-size: 2rem;
+    color: rgb(132, 247, 132);
+}
+.facebook   i{
+    font-size: 2rem;
+}
+.facebook   i:hover{
+    color: blue;
+}
+.instagram  i{
+    font-size: 2rem;
+}
+.instagram  i:hover{
+    color: tomato;
+}
+.tiktok i{
+    font-size: 2rem;
+}
+.tiktok i:hover{
+    color: rgb(24, 19, 19);
+}
+.social a{
+    font-size: 3rem;
+}
+.social a i{
+    transition: var(--transition);
+}
+.header-btn{
+    padding: 4rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.section-container{
+    max-width: 400px;
+    width: 90%;
+    margin: 3rem auto;
+}
+form{
+    padding-top: 1.5rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: flex; 
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 7px;
+    background-color: #474747;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover{
+    background-color: blue;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: 1px solid #71a2f6;
+} 
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+.input-group{
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 1rem;
+}
+.input-group:nth-child(3),
+.input-group:nth-child(4){
+    flex-basis: 100%;
+}
+label{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 7px;
+}
+.checkbox{
+    margin: 2rem 0;
+    display: flex;
+    gap: 1rem;
+}
+.img-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: 7px;
+}
+button{
+    width: 100%;
+    padding: 1rem;
+    background-color: #4c08a7;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+button:hover{
+    background-color: blue;
+}
+.terms{
+    color:  var(--secondary-color);
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 2rem;
+}
+a{
+    font-size: 1.5rem;
+    color:  var(--white);
+}
+
+
+/* ===== Tablet (≤768px) ===== */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-lists {
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .social {
+    margin-top: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .section-container {
+    width: 95%;
+    max-width: 600px;
+  }
+
+  .terms {
+    font-size: 1.8rem;
+  }
+}
+
+/* ===== Mobile (≤480px) ===== */
+@media (max-width: 912px) {
+  .header-container {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  .nav-lists,
+  ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .social {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .header-btn {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+
+  .section-container {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 2rem auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  button {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  .terms {
+    font-size: 1.5rem;
+}
+}
