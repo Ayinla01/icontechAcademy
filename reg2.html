@@ -7,27 +7,30 @@
     <link rel="stylesheet" href="reg2.css">
 </head>
 <body>
-    <h2>IconTech Academy Registration</h2>
-    <p>Fill the form below to join our tech programs</p>
-
+    <div class="container">
+    <div class="h2">
+        <h2>IconTech Academy Registration</h2>
+    <p>Fill the form below to join our tech programs:</p>
+    </div>
+    <div class="form">
     <form>
-        <label for="fname">Full Name</label>
-        <input type="text" id="name" placeholder="Full Name" required>
-        <label for="Email">Email</label>
-        <input type="email" name="" id=""  placeholder="Email" required>
-        <label for="number">Phone Number</label>
-        <input type="tel" name="" id=""  placeholder="08080000000" required>
-        <label for="date">Date of Birth</label>
-        <input type="date" name="" id=""  placeholder="mm/dd/yyyy" required>
-        <label for="address">Residential Address</label>
-        <input type="text" name="" id="" placeholder="home address" required>
-        <label for="state">State of Origin</label>
-        <input type="state" placeholder="state of origin" required>
-        <label for="town">Home Town</label>
-        <input type="text" name="" id="" required>
-        <label for="natoinality">Nation/Country</label>
-        <input type="text" name="country" id="" required>
-        <p>Tech Track</p>
+        <label for="fname">Full Name*</label>
+        <input type="text" id="name" placeholder="FULL NAME"    required>
+        <label for="Email">Email*</label>
+        <input type="email" name="" id=""  placeholder="EMAIL"  required>
+        <label for="number">Phone Number*</label>
+        <input type="tel" name="" id=""  placeholder="08080000000"  required>
+        <label for="date">Date of Birth*</label>
+        <input type="date" name="" id=""  placeholder="mm/dd/yyyy"  required>
+        <label for="address">Residential Address*</label>
+        <input type="text" name="" id="" placeholder="HOME ADDRESS" required>
+        <label for="state">State of Origin*</label>
+        <input type="state" placeholder="STATE OF ORIGIN"   required>
+        <label for="town">Home Town*</label>
+        <input type="text"required>
+        <label for="natoinality">Nation/Country*</label>
+        <input type="text" name="country"   required>
+        <div class="select">
         <label>Choose Tech Track:</label>
         <select>
             <option disabled selected>--Choose Tech Track</option>
@@ -38,30 +41,44 @@
             <option value="UI/UX">UI/UX</option>
             <option value="cs">Cyber Security</option>
         </select>
+        </div>
 
         <p>--Choose your gender</p>
         <div class="radio">
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male">
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female">
+        <div class="radio-group">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
         </div>
-<h2>--for parents/guidance only</h2>
-        <label for="name">Name</label>
-        <input type="text" name="name" id=""` required>
-         <label for="number">Phone Number</label>
+        <div class="radio-group">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+        </div>
+        </div>
+<div class="form2">
+        <h2>
+            --for parents/guidance only
+        </h2>
+        <label for="name">Name*</label>
+        <input type="text" name="name" id="" required>
+         <label for="number">Phone Number*</label>
         <input type="tel" name="" id=""  placeholder="08080000000"   required>
-        <label for="address">Residential Address</label>
-        <input type="text" name="" id="" placeholder="home address" required>
-        <label for="state">State of Origin</label>
-        <input type="state" placeholder="state of origin" required>
-        <label for="town">Home Town</label>
+        <label for="address">Residential Address*</label>
+        <input type="text" name="" id="" placeholder="HOME ADDRESS" required>
+        <label for="state">State of Origin*</label>
+        <input type="state" placeholder="STATE OF ORIGIN" required>
+        <label for="town">Home Town*</label>
         <input type="text" name="" id="" required>
-        <label for="natoinality">Nation/Country</label>
+        <label for="natoinality">Nation/Country*</label>
         <input type="text" name="country" id="" required>
-        
+</div>
 
-        <button><a href="last.html">Submit</a></button>
+<div class="text-area">
+    <p>Your aims and objective for learning tech:</p>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+</div>
+    <button><a href="last.html">Submit</a></button>
     </form>
+    </div>
+    </div>
 </body>
 </html>

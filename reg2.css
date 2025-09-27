@@ -17,31 +17,37 @@ body {
     background-repeat: no-repeat;
     height: 100%;
 }
+.container{
+    max-width: 500px;
+    width: 90%;
+    margin: 1rem auto;
+}
+.h2{
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
 h2{
     font-size: 2rem;
     text-align: center;
-    margin-top: 2rem;
     color: #71a2f6;
     border-top: 1px solid #fff;
-    padding-top: 2rem;
 }
 p{
     font-size: 1.8rem;
-    text-align: center;
-    margin-top: 2rem;
+    
+    margin:1rem;
 }
-form{
+.form{
     display: flex;
     flex-direction: column;
-    width: 30%;
-    margin:3rem auto;
 }
 label{
     font-size: 1.8rem;
     margin-left: 9px;
 }
 input{
-    font-size: 1rem;
+    width: 100%;
+    font-size: 1.5rem;
     color: #fff;
     background-color: aliceblue;
     padding: 1rem;
@@ -58,6 +64,10 @@ input:hover{
     color: black;
     font-size: 10px;
 }
+.select{
+    display: flex;
+    flex-direction: column;
+}
 select{
     font-size: 2rem;
     padding: 1rem;
@@ -71,17 +81,30 @@ option{
     color: black;
 }
 .radio{
+    font-size: 7px;
     display: flex;
     flex-direction: column;
+    position: absolute;
 }
-.radio  input{
+.radio-group{
+    position:relative;
+}
+input[type="radio"]:focus{
     outline: none;
-    padding-left: 0;
-    align-items: flex-end;
+}
+.form2{
+    margin-top: 9rem;
+}
+.text-area{
+   margin-top: 2rem;
+}
+textarea{
+    color: black;
+    font-size: 1rem;
 }
 button{
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding: 1rem;
     background-color: #4c08a7;
     color: #fff;
